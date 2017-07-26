@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABAC3951621AE4C5B7C65553 /* Pods_Gigster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9EE98C9C9C0FC97B032EDB /* Pods_Gigster.framework */; };
+		B6026E281F27BA5B00B86FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E271F27BA5B00B86FC8 /* AppDelegate.swift */; };
+		B6026E2F1F27BA5B00B86FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6026E2E1F27BA5B00B86FC8 /* Assets.xcassets */; };
+		B6026E321F27BA5B00B86FC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */; };
+		B6026E441F27BAE500B86FC8 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E391F27BAE500B86FC8 /* CreateUserViewController.swift */; };
+		B6026E451F27BAE500B86FC8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3A1F27BAE500B86FC8 /* ForgotPasswordViewController.swift */; };
+		B6026E461F27BAE500B86FC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3B1F27BAE500B86FC8 /* LoginViewController.swift */; };
+		B6026E471F27BAE500B86FC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3C1F27BAE500B86FC8 /* MainViewController.swift */; };
+		B6026E481F27BAE500B86FC8 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3D1F27BAE500B86FC8 /* Storyboard+Utility.swift */; };
+		B6026E491F27BAE500B86FC8 /* ViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */; };
+		B6026E4A1F27BAE500B86FC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E3F1F27BAE500B86FC8 /* User.swift */; };
+		B6026E4B1F27BAE500B86FC8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E401F27BAE500B86FC8 /* AuthService.swift */; };
+		B6026E4C1F27BAE500B86FC8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6026E411F27BAE500B86FC8 /* UserService.swift */; };
+		B6026E4D1F27BAE500B86FC8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E421F27BAE500B86FC8 /* Login.storyboard */; };
+		B6026E4E1F27BAE500B86FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E431F27BAE500B86FC8 /* Main.storyboard */; };
+		B6026E501F27C10A00B86FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32C24C1DC991BAFA3A7E30FF /* Pods-Gigster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigster/Pods-Gigster.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9EE98C9C9C0FC97B032EDB /* Pods_Gigster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6026E241F27BA5B00B86FC8 /* Gigster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6026E271F27BA5B00B86FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6026E2E1F27BA5B00B86FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6026E311F27BA5B00B86FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6026E331F27BA5B00B86FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6026E391F27BAE500B86FC8 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUserViewController.swift; path = Controllers/CreateUserViewController.swift; sourceTree = "<group>"; };
+		B6026E3A1F27BAE500B86FC8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = Controllers/ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B6026E3B1F27BAE500B86FC8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		B6026E3C1F27BAE500B86FC8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		B6026E3D1F27BAE500B86FC8 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Utility.swift"; path = "Extensions/ViewController+Utility.swift"; sourceTree = "<group>"; };
+		B6026E3F1F27BAE500B86FC8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		B6026E401F27BAE500B86FC8 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Services/AuthService.swift; sourceTree = "<group>"; };
+		B6026E411F27BAE500B86FC8 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
+		B6026E421F27BAE500B86FC8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		B6026E431F27BAE500B86FC8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFFFA5FF9D392A671718A243 /* Pods-Gigster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigster/Pods-Gigster.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6026E211F27BA5B00B86FC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC3951621AE4C5B7C65553 /* Pods_Gigster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63C3B4E0665AB864006D4B91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9EE98C9C9C0FC97B032EDB /* Pods_Gigster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A4338B068402AD512857A6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C24C1DC991BAFA3A7E30FF /* Pods-Gigster.debug.xcconfig */,
+				BFFFA5FF9D392A671718A243 /* Pods-Gigster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6026E1B1F27BA5B00B86FC8 = {
+			isa = PBXGroup;
+			children = (
+				B6026E261F27BA5B00B86FC8 /* Gigster */,
+				B6026E251F27BA5B00B86FC8 /* Products */,
+				6A4338B068402AD512857A6F /* Pods */,
+				63C3B4E0665AB864006D4B91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6026E251F27BA5B00B86FC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6026E241F27BA5B00B86FC8 /* Gigster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6026E261F27BA5B00B86FC8 /* Gigster */ = {
+			isa = PBXGroup;
+			children = (
+				B6026E271F27BA5B00B86FC8 /* AppDelegate.swift */,
+				B6026E2E1F27BA5B00B86FC8 /* Assets.xcassets */,
+				B6026E391F27BAE500B86FC8 /* CreateUserViewController.swift */,
+				B6026E3A1F27BAE500B86FC8 /* ForgotPasswordViewController.swift */,
+				B6026E3B1F27BAE500B86FC8 /* LoginViewController.swift */,
+				B6026E3C1F27BAE500B86FC8 /* MainViewController.swift */,
+				B6026E3D1F27BAE500B86FC8 /* Storyboard+Utility.swift */,
+				B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */,
+				B6026E3F1F27BAE500B86FC8 /* User.swift */,
+				B6026E401F27BAE500B86FC8 /* AuthService.swift */,
+				B6026E411F27BAE500B86FC8 /* UserService.swift */,
+				B6026E421F27BAE500B86FC8 /* Login.storyboard */,
+				B6026E431F27BAE500B86FC8 /* Main.storyboard */,
+				B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */,
+				B6026E331F27BA5B00B86FC8 /* Info.plist */,
+				B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */,
+			);
+			path = Gigster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6026E231F27BA5B00B86FC8 /* Gigster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6026E361F27BA5B00B86FC8 /* Build configuration list for PBXNativeTarget "Gigster" */;
+			buildPhases = (
+				EB91D9AAA2489A25942C097E /* [CP] Check Pods Manifest.lock */,
+				B6026E201F27BA5B00B86FC8 /* Sources */,
+				B6026E211F27BA5B00B86FC8 /* Frameworks */,
+				B6026E221F27BA5B00B86FC8 /* Resources */,
+				53C83E5D857D3741AE3ECDBF /* [CP] Embed Pods Frameworks */,
+				E7A7F715DCBB4FE776A331DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gigster;
+			productName = Gigster;
+			productReference = B6026E241F27BA5B00B86FC8 /* Gigster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6026E1C1F27BA5B00B86FC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zaya Gooding";
+				TargetAttributes = {
+					B6026E231F27BA5B00B86FC8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DS2L2HK79J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6026E1F1F27BA5B00B86FC8 /* Build configuration list for PBXProject "Gigster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6026E1B1F27BA5B00B86FC8;
+			productRefGroup = B6026E251F27BA5B00B86FC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6026E231F27BA5B00B86FC8 /* Gigster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6026E221F27BA5B00B86FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6026E321F27BA5B00B86FC8 /* LaunchScreen.storyboard in Resources */,
+				B6026E2F1F27BA5B00B86FC8 /* Assets.xcassets in Resources */,
+				B6026E501F27C10A00B86FC8 /* GoogleService-Info.plist in Resources */,
+				B6026E4D1F27BAE500B86FC8 /* Login.storyboard in Resources */,
+				B6026E4E1F27BAE500B86FC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53C83E5D857D3741AE3ECDBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigster/Pods-Gigster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A7F715DCBB4FE776A331DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigster/Pods-Gigster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB91D9AAA2489A25942C097E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6026E201F27BA5B00B86FC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6026E461F27BAE500B86FC8 /* LoginViewController.swift in Sources */,
+				B6026E281F27BA5B00B86FC8 /* AppDelegate.swift in Sources */,
+				B6026E441F27BAE500B86FC8 /* CreateUserViewController.swift in Sources */,
+				B6026E4B1F27BAE500B86FC8 /* AuthService.swift in Sources */,
+				B6026E491F27BAE500B86FC8 /* ViewController+Utility.swift in Sources */,
+				B6026E4A1F27BAE500B86FC8 /* User.swift in Sources */,
+				B6026E4C1F27BAE500B86FC8 /* UserService.swift in Sources */,
+				B6026E481F27BAE500B86FC8 /* Storyboard+Utility.swift in Sources */,
+				B6026E451F27BAE500B86FC8 /* ForgotPasswordViewController.swift in Sources */,
+				B6026E471F27BAE500B86FC8 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6026E311F27BA5B00B86FC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6026E341F27BA5B00B86FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6026E351F27BA5B00B86FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6026E371F27BA5B00B86FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C24C1DC991BAFA3A7E30FF /* Pods-Gigster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS2L2HK79J;
+				INFOPLIST_FILE = Gigster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zayalachanze.Gigster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B6026E381F27BA5B00B86FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFFA5FF9D392A671718A243 /* Pods-Gigster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS2L2HK79J;
+				INFOPLIST_FILE = Gigster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zayalachanze.Gigster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6026E1F1F27BA5B00B86FC8 /* Build configuration list for PBXProject "Gigster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6026E341F27BA5B00B86FC8 /* Debug */,
+				B6026E351F27BA5B00B86FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6026E361F27BA5B00B86FC8 /* Build configuration list for PBXNativeTarget "Gigster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6026E371F27BA5B00B86FC8 /* Debug */,
+				B6026E381F27BA5B00B86FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6026E1C1F27BA5B00B86FC8 /* Project object */;
+}
