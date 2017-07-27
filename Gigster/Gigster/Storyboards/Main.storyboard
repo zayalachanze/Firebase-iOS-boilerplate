@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile-->
+        <!--Main View Controller-->
         <scene sceneID="d52-lg-Jwa">
             <objects>
                 <viewController id="Ga0-TT-4BI" customClass="MainViewController" customModule="Gigster" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,6 +87,11 @@
                                     <constraint firstItem="NOq-1z-2vY" firstAttribute="height" secondItem="qwu-dC-urs" secondAttribute="height" id="JjQ-Nr-By7"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXZ-EG-dcs">
+                                <rect key="frame" x="313" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,7 +101,9 @@
                             <constraint firstItem="Vji-tN-1ni" firstAttribute="leading" secondItem="m03-uq-8Ar" secondAttribute="leadingMargin" constant="30" id="mkt-Co-S1B"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="nwh-6W-002"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-User-50" id="nwh-6W-002">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="nameLabel" destination="qwu-dC-urs" id="Dbi-f1-m8u"/>
                         <outlet property="usernameLabel" destination="NOq-1z-2vY" id="QeI-Xn-fr7"/>
@@ -104,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLf-VD-Mva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="125"/>
+            <point key="canvasLocation" x="1438" y="70"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aAa-1u-ZV2">
@@ -125,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="429.60000000000002" y="404.34782608695656"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="8Mg-Ez-PEv">
             <objects>
                 <viewController id="gcR-FA-7NS" sceneMemberID="viewController">
@@ -138,11 +145,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SP2-8a-FZ6"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-Music-50" id="SP2-8a-FZ6">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2b-70-VCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="776"/>
+            <point key="canvasLocation" x="1438" y="742"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-Music-50" width="35" height="35"/>
+        <image name="icons8-User-50" width="35" height="35"/>
+    </resources>
 </document>
