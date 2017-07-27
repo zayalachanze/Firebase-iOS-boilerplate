@@ -13,29 +13,27 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
+    @IBOutlet weak var loginStackView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
         
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
-        let gradient = CAGradientLayer()
-        
-        gradient.frame = view.bounds
-        gradient.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
-        
-        view.layer.insertSublayer(gradient, at: 0)
+        loginStackView.layer.cornerRadius = 10
     
         // Gradient
-/*        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.frame
-        gradientLayer.colors = [UIColor(red: 73/255.5, green: 160/255.5, blue: 67/255.5, alpha: 1.0), UIColor(red: 58/255.5, green: 127/255.5, blue: 53/255.5, alpha: 1.0)]
-        gradientLayer.locations = [0.0, 0.5, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.0,y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)
-        self.view.layer.addSublayer(gradientLayer)
-*/
+        let topColor = UIColor(red: (93/255.5), green: (180/255.5), blue: (87/255.5), alpha: 1.0)
+        let bottomColor = UIColor(red: (72/255.5), green: (134/255.5), blue: (73/255.5), alpha: 1.0)
         
+        let gradientColors: [CGColor] = [topColor.cgColor, bottomColor.cgColor]
+        let gradientLocations: [Float] = [0.0/1.0]
+        
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.colors = gradientColors
+        gradientLayer.locations = gradientLocations as [NSNumber]
+        
+        gradientLayer.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     override func didReceiveMemoryWarning() {
