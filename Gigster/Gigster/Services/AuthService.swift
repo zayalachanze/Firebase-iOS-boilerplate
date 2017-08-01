@@ -126,6 +126,9 @@ struct AuthService {
         
         let signOutAction = UIAlertAction(title: "Log Out", style: .destructive) { _ in
             logUserOut()
+            let initialViewController = UIStoryboard.initialViewController(for: .login)
+            viewController.view.window?.rootViewController = initialViewController
+            viewController.view.window?.makeKeyAndVisible()
         }
         
         alertController.addAction(signOutAction)

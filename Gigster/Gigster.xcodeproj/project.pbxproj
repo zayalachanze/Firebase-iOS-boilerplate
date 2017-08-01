@@ -23,6 +23,7 @@
 		B6026E4D1F27BAE500B86FC8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E421F27BAE500B86FC8 /* Login.storyboard */; };
 		B6026E4E1F27BAE500B86FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E431F27BAE500B86FC8 /* Main.storyboard */; };
 		B6026E501F27C10A00B86FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */; };
+		B699B9631F30B90F0025B14F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B9621F30B90F0025B14F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B6026E421F27BAE500B86FC8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		B6026E431F27BAE500B86FC8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B699B9621F30B90F0025B14F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Controllers/SettingsViewController.swift; sourceTree = "<group>"; };
 		BFFFA5FF9D392A671718A243 /* Pods-Gigster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigster/Pods-Gigster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */,
 				B6026E3F1F27BAE500B86FC8 /* User.swift */,
 				B6026E401F27BAE500B86FC8 /* AuthService.swift */,
+				B699B9621F30B90F0025B14F /* SettingsViewController.swift */,
 				B6026E411F27BAE500B86FC8 /* UserService.swift */,
 				B6026E421F27BAE500B86FC8 /* Login.storyboard */,
 				B6026E431F27BAE500B86FC8 /* Main.storyboard */,
@@ -246,6 +249,7 @@
 			files = (
 				B6026E461F27BAE500B86FC8 /* LoginViewController.swift in Sources */,
 				B6026E281F27BA5B00B86FC8 /* AppDelegate.swift in Sources */,
+				B699B9631F30B90F0025B14F /* SettingsViewController.swift in Sources */,
 				B6026E441F27BAE500B86FC8 /* CreateUserViewController.swift in Sources */,
 				B6026E4B1F27BAE500B86FC8 /* AuthService.swift in Sources */,
 				B6026E491F27BAE500B86FC8 /* ViewController+Utility.swift in Sources */,
