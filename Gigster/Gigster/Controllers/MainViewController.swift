@@ -37,4 +37,7 @@ class MainViewController: UIViewController {
     deinit {
         AuthService.removeAuthListener(authHandle: authHandle)
     }
+    
+    @IBAction func unwindToProfile(_ segue: UIStoryboardSegue) {
+    }
 }

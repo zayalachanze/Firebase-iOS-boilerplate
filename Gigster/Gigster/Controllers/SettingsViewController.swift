@@ -23,5 +23,4 @@ class SettingsViewController: UIViewController {
         }
         AuthService.presentDelete(viewController: self, user : user)
     }
-
 }
