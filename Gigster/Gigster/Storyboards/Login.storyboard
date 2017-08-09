@@ -86,6 +86,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="uGk-yz-gl9" firstAttribute="width" secondItem="y3T-5s-x5D" secondAttribute="width" id="05N-V2-20T"/>
+                                            <constraint firstAttribute="height" constant="226" id="7v0-Kb-qb7"/>
                                             <constraint firstItem="uGk-yz-gl9" firstAttribute="height" secondItem="lD2-We-Wew" secondAttribute="height" id="F4j-zz-zDL"/>
                                             <constraint firstItem="lD2-We-Wew" firstAttribute="width" secondItem="y3T-5s-x5D" secondAttribute="width" id="X2h-Iz-7j8"/>
                                         </constraints>
@@ -102,7 +103,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find musicians like you, near you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-Qd-uw6">
-                                <rect key="frame" x="160" y="152" width="200" height="60"/>
+                                <rect key="frame" x="166" y="152" width="200" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hnL-SQ-zsc"/>
                                     <constraint firstAttribute="width" constant="200" id="pHa-iI-B4e"/>
@@ -126,11 +127,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gigster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-ew-g47">
-                                <rect key="frame" x="48" y="84" width="260" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="2Vx-RN-Sjp"/>
-                                    <constraint firstAttribute="height" constant="100" id="uDP-lq-aJ6"/>
-                                </constraints>
+                                <rect key="frame" x="57.5" y="92" width="260" height="92"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="67"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -138,14 +135,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TSv-ew-g47" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="Hd3-yQ-Kyz"/>
-                            <constraint firstItem="zhh-Qd-uw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="Ikq-rZ-jlA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zhh-Qd-uw6" secondAttribute="trailing" constant="-7" id="027-5f-Qgc"/>
+                            <constraint firstItem="zhh-Qd-uw6" firstAttribute="leading" secondItem="TSv-ew-g47" secondAttribute="trailing" constant="-151.5" id="IAu-0z-Ux2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O1O-Ed-unx" secondAttribute="trailing" id="NTp-rg-Dfx"/>
                             <constraint firstAttribute="leadingMargin" secondItem="O1O-Ed-unx" secondAttribute="leading" id="OTE-mW-ORC"/>
                             <constraint firstItem="3EK-xG-Bgt" firstAttribute="top" secondItem="y3T-5s-x5D" secondAttribute="bottom" constant="20" id="Pcv-eg-JbJ"/>
+                            <constraint firstItem="TSv-ew-g47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SiS-PH-bkX"/>
                             <constraint firstItem="O1O-Ed-unx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TtL-hj-8dF"/>
                             <constraint firstItem="zhh-Qd-uw6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="132" id="aVN-YM-2SU"/>
-                            <constraint firstItem="TSv-ew-g47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="maC-V8-XNx"/>
+                            <constraint firstItem="O1O-Ed-unx" firstAttribute="top" secondItem="TSv-ew-g47" secondAttribute="bottom" constant="117" id="f5i-Af-QzO"/>
+                            <constraint firstItem="zhh-Qd-uw6" firstAttribute="top" secondItem="TSv-ew-g47" secondAttribute="bottom" constant="-32" id="mvA-xq-Caa"/>
                             <constraint firstItem="3EK-xG-Bgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ng7-BJ-JWi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O1O-Ed-unx" secondAttribute="bottom" constant="100" id="rxd-fj-EIa"/>
                         </constraints>
@@ -427,7 +426,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwL-BU-3P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bxD-1c-Nao" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="571"/>
+            <point key="canvasLocation" x="1849" y="463"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a8c-CG-1pv">
@@ -445,7 +444,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsF-Px-QrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="123"/>
+            <point key="canvasLocation" x="230" y="123"/>
         </scene>
     </scenes>
 </document>

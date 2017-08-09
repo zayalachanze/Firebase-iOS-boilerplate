@@ -182,7 +182,7 @@ struct AuthService {
         switch(error.localizedDescription) {
         case "The email address is badly formatted.":
             let invalidEmail = UIAlertController(title: "Email is not properly formatted.", message:
-                "Please enter a valid email to sign up with..", preferredStyle: UIAlertControllerStyle.alert)
+                "Please enter a valid email to sign up with.", preferredStyle: UIAlertControllerStyle.alert)
             invalidEmail.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
             controller.present(invalidEmail, animated: true, completion: nil)
             break;
