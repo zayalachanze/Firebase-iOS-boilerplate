@@ -99,21 +99,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hjZ-hq-T1J">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="100"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InstrumentCell" id="1tq-0t-lfk">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="87.5" y="100" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vOn-LG-0Tm">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What instruments do you play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziu-0S-tyP">
+                                    <rect key="frame" x="36" y="19" width="303" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="303" id="FIG-gi-oe4"/>
+                                        <constraint firstAttribute="height" constant="33" id="eaO-Tn-C9w"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select as many as you'd like. (You can change this later.)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktu-YD-1aY">
+                                    <rect key="frame" x="69" y="40" width="236" height="52"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ziu-0S-tyP" firstAttribute="centerX" secondItem="vOn-LG-0Tm" secondAttribute="centerX" id="hDh-Xb-CVo"/>
+                                <constraint firstItem="ziu-0S-tyP" firstAttribute="top" secondItem="vOn-LG-0Tm" secondAttribute="topMargin" constant="11" id="mSC-34-tsR"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="gTm-rc-PJR" id="aZo-Ov-0hc"/>
                             <outlet property="delegate" destination="gTm-rc-PJR" id="cvB-tz-3Zt"/>
@@ -124,10 +151,13 @@
                             <color key="tintColor" red="0.44647511839999998" green="0.69468539949999997" blue="0.3804166913" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="1ns-NH-WaS" kind="show" identifier="segueToMainApp" id="d4E-aI-hY4"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88h-6J-Rgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="403"/>
+            <point key="canvasLocation" x="704.79999999999995" y="402.54872563718146"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aAa-1u-ZV2">
@@ -404,30 +434,12 @@
                     <connections>
                         <outlet property="enterZipButton" destination="7KV-Xn-oh7" id="HmN-n2-dxr"/>
                         <outlet property="zipCodeTextField" destination="X0Q-tc-T3L" id="aA3-gx-B6a"/>
-                        <segue destination="yaM-Ld-teF" kind="show" identifier="segueToInstrumentSelect" id="YIB-Z5-te7"/>
+                        <segue destination="gTm-rc-PJR" kind="show" identifier="segueToInstrumentSelect" id="gSn-kr-TyS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lC0-jG-OtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1018" y="403"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="u92-xj-vS0">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yaM-Ld-teF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NBr-dp-MwF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="gTm-rc-PJR" kind="relationship" relationship="rootViewController" id="SL9-Eg-Cbi"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FD3-Ep-eOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-78" y="403"/>
+            <point key="canvasLocation" x="-207" y="403"/>
         </scene>
     </scenes>
     <resources>

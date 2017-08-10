@@ -24,6 +24,7 @@
 		B6026E4E1F27BAE500B86FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E431F27BAE500B86FC8 /* Main.storyboard */; };
 		B6026E501F27C10A00B86FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */; };
 		B61846561F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */; };
+		B61846581F3CEB4800BCE7BC /* InstrumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61846571F3CEB4800BCE7BC /* InstrumentCell.swift */; };
 		B6440F471F326C1D00939879 /* FindMusiciansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */; };
 		B6440F4D1F33B02300939879 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6440F4C1F33B02300939879 /* SetLocationViewController.swift */; };
 		B699B9631F30B90F0025B14F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B9621F30B90F0025B14F /* SettingsViewController.swift */; };
@@ -50,6 +51,7 @@
 		B6026E431F27BAE500B86FC8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectInstrumentsViewController.swift; path = Controllers/SelectInstrumentsViewController.swift; sourceTree = "<group>"; };
+		B61846571F3CEB4800BCE7BC /* InstrumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstrumentCell.swift; path = Controllers/InstrumentCell.swift; sourceTree = "<group>"; };
 		B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindMusiciansViewController.swift; path = Controllers/FindMusiciansViewController.swift; sourceTree = "<group>"; };
 		B6440F4C1F33B02300939879 /* SetLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetLocationViewController.swift; path = Controllers/SetLocationViewController.swift; sourceTree = "<group>"; };
 		B699B9621F30B90F0025B14F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Controllers/SettingsViewController.swift; sourceTree = "<group>"; };
@@ -108,26 +110,59 @@
 			children = (
 				B6026E271F27BA5B00B86FC8 /* AppDelegate.swift */,
 				B6026E2E1F27BA5B00B86FC8 /* Assets.xcassets */,
-				B6026E391F27BAE500B86FC8 /* CreateUserViewController.swift */,
-				B6026E3A1F27BAE500B86FC8 /* ForgotPasswordViewController.swift */,
-				B6026E3B1F27BAE500B86FC8 /* LoginViewController.swift */,
-				B6026E3C1F27BAE500B86FC8 /* MainViewController.swift */,
-				B6026E3D1F27BAE500B86FC8 /* Storyboard+Utility.swift */,
-				B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */,
+				B618465B1F3CF96800BCE7BC /* Views */,
+				B61846591F3CF91800BCE7BC /* Extensions */,
+				B618465A1F3CF94E00BCE7BC /* Storyboards */,
+				B618465C1F3CF99500BCE7BC /* View Controllers */,
 				B6026E3F1F27BAE500B86FC8 /* User.swift */,
 				B6026E401F27BAE500B86FC8 /* AuthService.swift */,
-				B699B9621F30B90F0025B14F /* SettingsViewController.swift */,
 				B6026E411F27BAE500B86FC8 /* UserService.swift */,
-				B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */,
-				B6440F4C1F33B02300939879 /* SetLocationViewController.swift */,
-				B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */,
-				B6026E421F27BAE500B86FC8 /* Login.storyboard */,
-				B6026E431F27BAE500B86FC8 /* Main.storyboard */,
-				B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */,
 				B6026E331F27BA5B00B86FC8 /* Info.plist */,
 				B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */,
 			);
 			path = Gigster;
+			sourceTree = "<group>";
+		};
+		B61846591F3CF91800BCE7BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6026E3D1F27BAE500B86FC8 /* Storyboard+Utility.swift */,
+				B6026E3E1F27BAE500B86FC8 /* ViewController+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B618465A1F3CF94E00BCE7BC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6026E421F27BAE500B86FC8 /* Login.storyboard */,
+				B6026E431F27BAE500B86FC8 /* Main.storyboard */,
+				B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B618465B1F3CF96800BCE7BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B61846571F3CEB4800BCE7BC /* InstrumentCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B618465C1F3CF99500BCE7BC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6026E391F27BAE500B86FC8 /* CreateUserViewController.swift */,
+				B6026E3A1F27BAE500B86FC8 /* ForgotPasswordViewController.swift */,
+				B6026E3B1F27BAE500B86FC8 /* LoginViewController.swift */,
+				B6026E3C1F27BAE500B86FC8 /* MainViewController.swift */,
+				B699B9621F30B90F0025B14F /* SettingsViewController.swift */,
+				B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */,
+				B6440F4C1F33B02300939879 /* SetLocationViewController.swift */,
+				B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +297,7 @@
 				B6440F4D1F33B02300939879 /* SetLocationViewController.swift in Sources */,
 				B6026E441F27BAE500B86FC8 /* CreateUserViewController.swift in Sources */,
 				B6440F471F326C1D00939879 /* FindMusiciansViewController.swift in Sources */,
+				B61846581F3CEB4800BCE7BC /* InstrumentCell.swift in Sources */,
 				B6026E4B1F27BAE500B86FC8 /* AuthService.swift in Sources */,
 				B6026E491F27BAE500B86FC8 /* ViewController+Utility.swift in Sources */,
 				B6026E4A1F27BAE500B86FC8 /* User.swift in Sources */,
