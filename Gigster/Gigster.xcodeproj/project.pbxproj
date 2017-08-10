@@ -23,7 +23,7 @@
 		B6026E4D1F27BAE500B86FC8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E421F27BAE500B86FC8 /* Login.storyboard */; };
 		B6026E4E1F27BAE500B86FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6026E431F27BAE500B86FC8 /* Main.storyboard */; };
 		B6026E501F27C10A00B86FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */; };
-		B61846511F3B5A8200BCE7BC /* SelectInstrumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61846501F3B5A8200BCE7BC /* SelectInstrumentsViewController.swift */; };
+		B61846561F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */; };
 		B6440F471F326C1D00939879 /* FindMusiciansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */; };
 		B6440F4D1F33B02300939879 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6440F4C1F33B02300939879 /* SetLocationViewController.swift */; };
 		B699B9631F30B90F0025B14F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B9621F30B90F0025B14F /* SettingsViewController.swift */; };
@@ -49,7 +49,7 @@
 		B6026E421F27BAE500B86FC8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		B6026E431F27BAE500B86FC8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		B6026E4F1F27C10A00B86FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B61846501F3B5A8200BCE7BC /* SelectInstrumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectInstrumentsViewController.swift; path = Controllers/SelectInstrumentsViewController.swift; sourceTree = "<group>"; };
+		B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectInstrumentsViewController.swift; path = Controllers/SelectInstrumentsViewController.swift; sourceTree = "<group>"; };
 		B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindMusiciansViewController.swift; path = Controllers/FindMusiciansViewController.swift; sourceTree = "<group>"; };
 		B6440F4C1F33B02300939879 /* SetLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetLocationViewController.swift; path = Controllers/SetLocationViewController.swift; sourceTree = "<group>"; };
 		B699B9621F30B90F0025B14F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Controllers/SettingsViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				B6026E411F27BAE500B86FC8 /* UserService.swift */,
 				B6440F461F326C1D00939879 /* FindMusiciansViewController.swift */,
 				B6440F4C1F33B02300939879 /* SetLocationViewController.swift */,
-				B61846501F3B5A8200BCE7BC /* SelectInstrumentsViewController.swift */,
+				B61846551F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift */,
 				B6026E421F27BAE500B86FC8 /* Login.storyboard */,
 				B6026E431F27BAE500B86FC8 /* Main.storyboard */,
 				B6026E301F27BA5B00B86FC8 /* LaunchScreen.storyboard */,
@@ -267,7 +267,7 @@
 				B6026E4A1F27BAE500B86FC8 /* User.swift in Sources */,
 				B6026E4C1F27BAE500B86FC8 /* UserService.swift in Sources */,
 				B6026E481F27BAE500B86FC8 /* Storyboard+Utility.swift in Sources */,
-				B61846511F3B5A8200BCE7BC /* SelectInstrumentsViewController.swift in Sources */,
+				B61846561F3CA6C000BCE7BC /* SelectInstrumentsViewController.swift in Sources */,
 				B6026E451F27BAE500B86FC8 /* ForgotPasswordViewController.swift in Sources */,
 				B6026E471F27BAE500B86FC8 /* MainViewController.swift in Sources */,
 			);

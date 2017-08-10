@@ -88,95 +88,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLf-VD-Mva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3198.5" y="69.5"/>
+            <point key="canvasLocation" x="4136.8000000000002" y="68.815592203898049"/>
         </scene>
-        <!--Select Instruments View Controller-->
-        <scene sceneID="YdI-kg-esH">
+        <!--What instruments do you play?-->
+        <scene sceneID="dFs-fo-3zn">
             <objects>
-                <viewController id="s3E-qY-p9E" customClass="SelectInstrumentsViewController" customModule="Gigster" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XQd-LU-HSv"/>
-                        <viewControllerLayoutGuide type="bottom" id="VK5-jO-kQ5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2k3-rC-vml">
+                <collectionViewController id="gTm-rc-PJR" customClass="SelectInstrumentsViewController" customModule="Gigster" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nI6-4k-gSj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ezV-LS-NfU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="543"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xOe-fT-Thg">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="90" height="80"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="instrumentSelectCell" id="Aah-73-0qn">
-                                        <rect key="frame" x="0.0" y="90" width="115" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <size key="customSize" width="115" height="80"/>
-                                    </collectionViewCell>
-                                </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="instrumentSelectHeader" id="DWi-C5-xfl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What instruments do you play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj2-0f-thj">
-                                            <rect key="frame" x="42" y="0.0" width="291" height="47"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="47" id="4pA-L8-Oxf"/>
-                                                <constraint firstAttribute="width" constant="291" id="E6m-ar-A6A"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Select as many as you want. You can add to this list later.)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-9W-thk">
-                                            <rect key="frame" x="42" y="28" width="291" height="52"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="gj2-0f-thj" firstAttribute="top" secondItem="DWi-C5-xfl" secondAttribute="topMargin" constant="-8" id="3Qm-wK-AZP"/>
-                                        <constraint firstItem="gj2-0f-thj" firstAttribute="centerX" secondItem="DWi-C5-xfl" secondAttribute="centerX" id="JDp-dJ-l6k"/>
-                                    </constraints>
-                                </collectionReusableView>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-rn-YYu">
-                                <rect key="frame" x="80" y="571" width="215" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="8ZB-xJ-pxU"/>
-                                    <constraint firstAttribute="height" constant="60" id="gXa-Aq-oLR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.36470588235294116" green="0.70588235294117641" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1ns-NH-WaS" kind="show" id="K0b-Zk-ej2"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="o2l-rn-YYu" firstAttribute="centerX" secondItem="2k3-rC-vml" secondAttribute="centerX" id="VNf-D0-DAq"/>
-                            <constraint firstItem="o2l-rn-YYu" firstAttribute="top" secondItem="XQd-LU-HSv" secondAttribute="bottom" constant="551" id="aCJ-Fn-Wgg"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M2P-B9-hOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hjZ-hq-T1J">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InstrumentCell" id="1tq-0t-lfk">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gTm-rc-PJR" id="aZo-Ov-0hc"/>
+                            <outlet property="delegate" destination="gTm-rc-PJR" id="cvB-tz-3Zt"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="What instruments do you play?" id="Abc-UV-r7Y">
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="xvp-qP-UJ0">
+                            <color key="tintColor" red="0.44647511839999998" green="0.69468539949999997" blue="0.3804166913" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88h-6J-Rgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="402.54872563718146"/>
+            <point key="canvasLocation" x="706" y="403"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aAa-1u-ZV2">
@@ -351,7 +302,7 @@
                 <exit id="2y1-Xd-8h4" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKU-f8-vES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3940" y="-186"/>
+            <point key="canvasLocation" x="4879.1999999999998" y="-186.65667166416793"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h4K-Bc-xST">
@@ -372,7 +323,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDj-7g-xP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376.8000000000002" y="69.715142428785612"/>
+            <point key="canvasLocation" x="3316" y="69.715142428785612"/>
         </scene>
         <!--Set Location View Controller-->
         <scene sceneID="0hp-pd-s2t">
@@ -453,12 +404,30 @@
                     <connections>
                         <outlet property="enterZipButton" destination="7KV-Xn-oh7" id="HmN-n2-dxr"/>
                         <outlet property="zipCodeTextField" destination="X0Q-tc-T3L" id="aA3-gx-B6a"/>
-                        <segue destination="s3E-qY-p9E" kind="show" identifier="segueToInstrumentSelect" id="5oc-3T-Xed"/>
+                        <segue destination="yaM-Ld-teF" kind="show" identifier="segueToInstrumentSelect" id="YIB-Z5-te7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lC0-jG-OtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143" y="403"/>
+            <point key="canvasLocation" x="-1018" y="403"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u92-xj-vS0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yaM-Ld-teF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NBr-dp-MwF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gTm-rc-PJR" kind="relationship" relationship="rootViewController" id="SL9-Eg-Cbi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FD3-Ep-eOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="403"/>
         </scene>
     </scenes>
     <resources>
