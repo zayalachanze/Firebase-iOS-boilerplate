@@ -12,11 +12,50 @@ final class SelectInstrumentsViewController: UICollectionViewController {
     
     fileprivate let itemsPerRow: CGFloat = 3
     
-    // MARK: - Properties
+    var selectedInstrumentIndexPath: NSIndexPath? {
+        didSet {
+            var indexPaths = [IndexPath]()
+            if let selectedInstrumentIndexPath = selectedInstrumentIndexPath {
+                indexPaths.append(selectedInstrumentIndexPath as IndexPath)
+            }
+            if let oldValue = oldValue {
+                indexPaths.append(oldValue as IndexPath)
+            }
+            collectionView?.performBatchUpdates({
+                self.collectionView?.reloadItems(at: indexPaths)
+            }) { completed in
+                if let selectedInstrumentIndexPath = self.selectedInstrumentIndexPath {
+                    self.collectionView?.scrollToItem(
+                        at: selectedInstrumentIndexPath as IndexPath,
+                        at: .centeredVertically,
+                        animated: true)
+                }
+            }
+        }
+    }
+    
+    @IBAction func selectInstrumentsButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "SegueToMainApp", sender: nil)
+    }
+    
+    
+    // MARK: - Properties (Collection View)
     fileprivate let reuseIdentifier = "InstrumentCell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
     
     let instrumentList = ["Vocals", "Acoustic Guitar", "Electric Guitar", "Piano", "Keyboard", "Bass Guitar", "Drums", "Ukulele", "Violin", "Viola", "Cello", "String/Upright Bass", "Saxophone", "Trumpet", "Trombone", "Tuba", "Oboe", "Flute", "Clarinet", "Organ", "Harp", "Xylophone", "Banjo", "Accordion", "Melodica", "Synth", "DJ/Midi"]
+    
+     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "InstrumentCollectionHeaderView", for: indexPath) as! InstrumentCollectionHeaderView
+            return headerView
+            
+        default:
+            assert(false, "Unexpected element kind")
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource
