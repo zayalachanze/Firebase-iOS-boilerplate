@@ -16,6 +16,7 @@ class User : NSObject {
     let firstName : String
     let lastName : String
     let username : String
+    //let zipCode : String
     var dictValue: [String : Any] {
         return ["firstName" : firstName,
                 "lastName" : lastName,
@@ -23,11 +24,12 @@ class User : NSObject {
     }
     
     //Standard User init()
-    init(uid: String, username: String, firstName: String, lastName: String) {
+    init(uid: String, username: String, firstName: String, lastName: String, zipCode: String) {
         self.uid = uid
         self.firstName = firstName
         self.lastName = lastName
         self.username = username
+        //self.zipCode = zipCode
         super.init()
     }
     
@@ -42,6 +44,7 @@ class User : NSObject {
         self.firstName = firstName
         self.lastName = lastName
         self.username = username
+        //self.zipCode = zipCode
     }
     
     //UserDefaults
@@ -56,6 +59,7 @@ class User : NSObject {
         self.firstName = firstName
         self.lastName = lastName
         self.username = username
+        //self.zipCode = zipCode
     }
     
     

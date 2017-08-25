@@ -9,6 +9,7 @@ import Foundation
 import FirebaseDatabase
 
 struct UserService {
+    
     static func create(_ firUser: FIRUser, username: String, firstName: String, lastName: String, completion: @escaping (User?) -> Void) {
         let userAttrs = ["username": username,
                          "firstName": firstName,

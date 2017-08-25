@@ -9,30 +9,8 @@
 import UIKit
 
 final class SelectInstrumentsViewController: UICollectionViewController {
-    
+
     fileprivate let itemsPerRow: CGFloat = 3
-    
-    var selectedInstrumentIndexPath: NSIndexPath? {
-        didSet {
-            var indexPaths = [IndexPath]()
-            if let selectedInstrumentIndexPath = selectedInstrumentIndexPath {
-                indexPaths.append(selectedInstrumentIndexPath as IndexPath)
-            }
-            if let oldValue = oldValue {
-                indexPaths.append(oldValue as IndexPath)
-            }
-            collectionView?.performBatchUpdates({
-                self.collectionView?.reloadItems(at: indexPaths)
-            }) { completed in
-                if let selectedInstrumentIndexPath = self.selectedInstrumentIndexPath {
-                    self.collectionView?.scrollToItem(
-                        at: selectedInstrumentIndexPath as IndexPath,
-                        at: .centeredVertically,
-                        animated: true)
-                }
-            }
-        }
-    }
     
     @IBAction func selectInstrumentsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "SegueToMainApp", sender: nil)
@@ -40,6 +18,7 @@ final class SelectInstrumentsViewController: UICollectionViewController {
     
     
     // MARK: - Properties (Collection View)
+    var selectedInstruments = [String]()
     fileprivate let reuseIdentifier = "InstrumentCell"
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
     
@@ -56,6 +35,8 @@ final class SelectInstrumentsViewController: UICollectionViewController {
             assert(false, "Unexpected element kind")
         }
     }
+    
+
 }
 
 // MARK: - UICollectionViewDataSource
@@ -68,10 +49,22 @@ extension SelectInstrumentsViewController {
         return instrumentList.count
     }
     
-    override func collectionView(_ collectionView: UICollectionView,
-                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if selectedInstruments.contains(instrumentList[indexPath.row]) {
+            collectionView.cellForItem(at: indexPath)?.backgroundColor = UIColor(red: 250/255.5, green: 250/255.5, blue: 250/255.5, alpha: 1.0)
+            selectedInstruments.remove(at: selectedInstruments.index(of: instrumentList[indexPath.row])!)
+        } else {
+            collectionView.cellForItem(at: indexPath)?.backgroundColor = UIColor(red: (93/255.5), green: (180/255.5), blue: (87/255.5), alpha: 1.0)
+            selectedInstruments.append(instrumentList[indexPath.row])
+            
+        }
+    }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! InstrumentCell
         cell.backgroundColor = UIColor(red: 250/255.5, green: 250/255.5, blue: 250/255.5, alpha: 1.0)
+        cell.instrumentLabel.text = instrumentList[indexPath.row]
 
         // Configure the cell
         return cell

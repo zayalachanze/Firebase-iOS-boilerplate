@@ -86,8 +86,8 @@
                                         <constraints>
                                             <constraint firstItem="uGk-yz-gl9" firstAttribute="width" secondItem="y3T-5s-x5D" secondAttribute="width" id="05N-V2-20T"/>
                                             <constraint firstAttribute="height" constant="226" id="7v0-Kb-qb7"/>
-                                            <constraint firstItem="uGk-yz-gl9" firstAttribute="height" secondItem="lD2-We-Wew" secondAttribute="height" id="F4j-zz-zDL"/>
                                             <constraint firstItem="lD2-We-Wew" firstAttribute="width" secondItem="y3T-5s-x5D" secondAttribute="width" id="X2h-Iz-7j8"/>
+                                            <constraint firstItem="lD2-We-Wew" firstAttribute="height" secondItem="uGk-yz-gl9" secondAttribute="height" id="oKR-vI-cG5"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -127,6 +127,9 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gigster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-ew-g47">
                                 <rect key="frame" x="59.5" y="92" width="256" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="qpI-y0-LZW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="67"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

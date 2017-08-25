@@ -39,8 +39,9 @@ class SetLocationViewController: UIViewController {
             invalidZipAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
             self.present(invalidZipAlert, animated: true, completion: nil)
         } else {
-            let zipCode = zipCodeTextField.text
+            var zipCode = zipCodeTextField.text
             performSegue(withIdentifier: "segueToInstrumentSelect", sender: nil)
+            print("Zip Code entered")
         }
     }
 }
